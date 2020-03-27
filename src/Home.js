@@ -1,22 +1,19 @@
-import React, {useState, useEffect} from 'react'
-// import * as yup from 'yup'
-// import Axios from 'axios'
+import React from "react";
+import { Link } from "react-router-dom"
+import Pizza from '../src/Pizza.jpg'
 
 
 
-
-function Home() {
+export default function Home() {
     return (
-      <div className='homeContent'>
-        <img
-          className="home-image"
-          src="Assets\Pizza.jpg"
-          alt=""
-        />
-        <button className="order">Order Zza</button>
+      <div>
+        <h1>Welcome to Jabin's Delicious Zza</h1>
+        <h2>Order your mucho delicious Zza today!</h2>
+        <img className="home-image" src={Pizza} alt='pic of super delicious Zza that makes you wanna order 12 of them'/>
+        <Link className='orderZza' to ={'/Form'}>
+            <button className='order-here'>Order Zaa!</button>
+        </Link>
       </div>
     );
   }
-  
-  export default Home;
   
