@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* //style with class names */
+.list{
+  display: flex;
+  flex-direction: column;
+}
+.home-image{
+  border-radius: 15px;
+  max-width: 50%;
+  display: flex;
+  margin-left: 24%;
+  padding-bottom: 1%;
+}
+div{
+  display: flex;
+  flex-direction: column;
+}
+h1, h2, .home-image, .orderZza{
+  display: flex;
+  justify-content: center;
+}
